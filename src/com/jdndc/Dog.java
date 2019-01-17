@@ -1,14 +1,13 @@
 package com.jdndc;
 
-import java.sql.SQLOutput;
-
 public class Dog {
-    //Dog properties
+    //Dog properties:
     private String breed;
     private int age;
     private double weight;
     private String name;
 
+    // Constructors:
     public Dog() {
         this.breed = "Halfblood";
     }
@@ -28,6 +27,7 @@ public class Dog {
         this.weight = weight;
     }
 
+    //Methods:
     public String getBreed() {
         return breed;
     }
@@ -41,6 +41,7 @@ public class Dog {
     }
 
     public void setAge(int age) throws Exception {
+        // If age is less than 0 throw an exception.
         if (age >= 0) {
             this.age = age;
         } else {
@@ -62,6 +63,7 @@ public class Dog {
     }
 
     public void setName(String name) throws Exception {
+        //Throw exception if name is empty or spaces.
         if (!name.trim().equals("")) {
             this.name = name;
         } else {
