@@ -7,7 +7,6 @@ public class Dog {
     private double weight;
     private String name;
 
-    // Constructors:
     public Dog() {
         this.breed = "Halfblood";
     }
@@ -27,7 +26,6 @@ public class Dog {
         this.weight = weight;
     }
 
-    //Methods:
     public String getBreed() {
         return breed;
     }
@@ -40,14 +38,8 @@ public class Dog {
         return age;
     }
 
-    public void setAge(int age) throws Exception {
-        // If age is less than 0 throw an exception.
-        if (age >= 0) {
-            this.age = age;
-        } else {
-            System.out.println("Age cannot be less than 0");
-            throw new Exception("Age cannot be less than 0");
-        }
+    public void setAge(int age) {
+        this.age = age;
     }
 
     public double getWeight() {
@@ -62,13 +54,8 @@ public class Dog {
         return name;
     }
 
-    public void setName(String name) throws Exception {
-        //Throw exception if name is empty or spaces.
-        if (!name.trim().equals("")) {
-            this.name = name;
-        } else {
-            throw new Exception("Name cannot be empty.");
-        }
+    public void setName(String name) {
+        this.name = name;
     }
 
     public void run() {

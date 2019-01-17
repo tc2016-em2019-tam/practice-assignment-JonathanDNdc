@@ -2,10 +2,9 @@ package com.jdndc;
 
 public class Main {
 
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         Dog fido, firulais, falfurrias, fifi;
-
-
+        
         fido = new Dog("Terrier");
         firulais = new Dog(5, 25.0);
         falfurrias = new Dog("Weimaraner", 10, 40.0);
